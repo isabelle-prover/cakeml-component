@@ -1,6 +1,6 @@
 # CakeML specifics
 cake
-cake.S
+*.S
 
 # Prerequisites
 *.d
