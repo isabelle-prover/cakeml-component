@@ -4,5 +4,8 @@ os:
   - linux
   - osx
 
+env:
+  - ISABELLE_CC=gcc
+
 script:
   - make test

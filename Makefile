@@ -1,3 +1,5 @@
+SCRIPTS=common.sh compile.sh test.sh
+
 all: cake
 
 cake.S: cake.S.xz
@@ -5,10 +7,10 @@ cake.S: cake.S.xz
 
 cake: cake.o basis_ffi.o
 
-%.cake.out: %.ml cake compile.sh
+%.cake.out: %.ml cake $(SCRIPTS)
 	./compile.sh $< $@
 
-test: test.sh test/test.cake.out
+test: test/test.cake.out $(SCRIPTS)
 	./test.sh
 
 clean:

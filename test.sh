@@ -2,7 +2,7 @@
 
 set -e
 
-source common.sh
+source "$(dirname "$0")/common.sh"
 
 cecho $white "Testing ..."
 

@@ -2,7 +2,7 @@
 
 set -e
 
-source common.sh
+source "$(dirname "$0")/common.sh"
 
 INPUT="$1"
 OUTPUT="$2"
@@ -10,7 +10,7 @@ OUTPUT="$2"
 [ -n "$INPUT" ] || die "No input specified"
 
 if [ -z "$2" ]; then
-  OUTPUT="$(dirname "$INPUT")/$(basename "$INPUT" .ml).out"
+  OUTPUT="$(dirname "$INPUT")/$(basename "$INPUT" .ml).cake.out"
   if [ "$OUTPUT" = "$INPUT" ]; then
     die "No output specified and could not guess output file"
   else
@@ -36,6 +36,6 @@ fi
 
 cecho $white "Linking ..."
 
-gcc -o "$OUTPUT" "$COMPILER_DIR/basis_ffi.c" "$CAKE_OUTPUT"
+"$ISABELLE_CC" -o "$OUTPUT" "$COMPILER_DIR/basis_ffi.c" "$CAKE_OUTPUT"
 
 cecho $green "Done."
