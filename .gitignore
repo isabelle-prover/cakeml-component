@@ -1,6 +1,7 @@
 # CakeML specifics
 cake
 *.S
+cakeml-*.tar.gz
 
 # Prerequisites
 *.d
