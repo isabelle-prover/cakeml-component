@@ -36,6 +36,6 @@ fi
 
 cecho $white "Linking ..."
 
-gcc -o "$OUTPUT" -static "$COMPILER_DIR/basis_ffi.c" "$CAKE_OUTPUT"
+gcc -o "$OUTPUT" "$COMPILER_DIR/basis_ffi.c" "$CAKE_OUTPUT"
 
 cecho $green "Done."
