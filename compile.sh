@@ -18,8 +18,12 @@ if [ -z "$2" ]; then
   fi
 fi
 
+mktemp() {
+  python -c 'from tempfile import NamedTemporaryFile; print(NamedTemporaryFile(suffix=".S", delete=False).name)'
+}
+
 COMPILER_DIR="$(dirname "$0")"
-CAKE_OUTPUT="$(mktemp --suffix=.S)"
+CAKE_OUTPUT="$(mktemp)"
 
 cecho $white "Compiling \`$INPUT' ..."
 
