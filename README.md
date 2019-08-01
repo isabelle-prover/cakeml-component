@@ -2,7 +2,7 @@ cakeml - Compile CakeML programs
 ================================
 
 [![CakeML](badge.png)](https://cakeml.org/)
-[![Build Status](https://travis-ci.org/larsrh/cakeml-component.svg?branch=master)](https://travis-ci.org/larsrh/cakeml-component)
+[![Build Status](https://travis-ci.org/isabelle-prover/cakeml-component.svg?branch=master)](https://travis-ci.org/isabelle-prover/cakeml-component)
 [![AFP](https://img.shields.io/badge/AFP-CakeML-yellow.svg)](https://devel.isa-afp.org/entries/CakeML.html)
 
 This repository is an Isabelle component that is supposed to work together with the [CakeML AFP entry](https://devel.isa-afp.org/entries/CakeML.html).
@@ -35,4 +35,4 @@ Packaging
 Sources
 -------
 
-This README is part of the repository [larsrh/cakeml-component](https://github.com/larsrh/cakeml-component).
+This README is part of the repository [isabelle-prover/cakeml-component](https://github.com/isabelle-prover/cakeml-component).
