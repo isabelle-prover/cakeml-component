@@ -36,6 +36,6 @@ fi
 
 cecho $white "Linking ..."
 
-"$ISABELLE_CC" -o "$OUTPUT" "$COMPILER_DIR/basis_ffi.c" "$CAKE_OUTPUT"
+"$ISABELLE_CC" -no-pie -o "$OUTPUT" "$COMPILER_DIR/basis_ffi.c" "$CAKE_OUTPUT"
 
 cecho $green "Done."

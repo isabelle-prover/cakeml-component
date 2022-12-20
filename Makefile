@@ -1,5 +1,9 @@
 SCRIPTS=common.sh compile.sh test.sh
 
+ASFLAGS=-no-pie
+CFLAGS=-no-pie
+LDFLAGS=-no-pie
+
 all: cake
 
 cake.S: cake.S.xz
