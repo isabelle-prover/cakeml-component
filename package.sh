@@ -23,7 +23,7 @@ FILES=(
   "basis_ffi.c"
   "LICENSE"
   "NOTICE"
-  "README"
+  "README.md"
   "etc/settings"
 )
 
